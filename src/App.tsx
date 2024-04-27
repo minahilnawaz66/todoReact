@@ -31,7 +31,6 @@ function App() {
       <h1>TODO APP</h1>
         <div>
         <AddTask addTask={addTask} />
-
           {tasks.map((task, index) => (
             <div>
               <span onClick={() => addTask(index)}>
@@ -43,7 +42,6 @@ function App() {
         </div>
         <button onClick={() => removeTaskAll()}>Delete All</button>
     </>
-
   );
 }
 
